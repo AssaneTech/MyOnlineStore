@@ -3,11 +3,14 @@
 
 body{
     background:black;
+    padding-top: 150px; /*It permits my navbar to not hide the other body part*/
 }
 
 
 /*My navbar*/
 nav {
+    top:0;
+    left: 0;
     display:flex;
     padding-left:0;
     background:green;
@@ -35,10 +38,31 @@ nav {
     color:white;
 }
 
+
+
+
 /*Styling my products*/
+.myproducts {
+    display: flex;
+    padding-right: 10%;
+    padding-left: 10%;
+    width:80%;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.product{
+    display: flex;
+    align-content: stretch;
+
+}
+
+
 .product > img {
+    margin: 20px;
     width:300px;
     height: 400px;
     border-radius: 5px;
     border : solid green;
+
 }
